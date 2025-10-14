@@ -3,6 +3,9 @@ const { InfluxDB, Point } = require("@influxdata/influxdb-client");
 const fs = require("fs");
 require('dotenv').config();
 
+// ✅ Import dataPoints to get category
+const { dataPoints } = require("./dataPoints");
+
 // 🔧 Concurrency config
 const MAX_CONCURRENT = 50;
 const BATCH_DELAY_MS = 500;
@@ -71,21 +74,22 @@ function updateHeartbeatFile(statusText = "⏳ Waiting for data...") {
   }
 }
 
-// run heartbeat file update every 15 seconds (even if no data)
 setInterval(() => updateHeartbeatFile(), 15000);
-
-// --- When actual data arrives ---
 function markDataReceived() {
   lastDataTime = new Date();
   updateHeartbeatFile("✅ Data received");
 }
 
-// --- Helper: get description directly from InfluxDB write ---
-function getDescriptionFromInflux(nodeId, fallbackName) {
-  return fallbackName || nodeId || "N/A";
+// --- Helper: Get description and category ---
+function getNodeMeta(nodeId, fallbackName) {
+  const meta = dataPoints.find(dp => dp.nodeId === nodeId);
+  return {
+    description: meta?.description || fallbackName || "N/A",
+    category: meta?.category || "uncategorized"
+  };
 }
 
-// --- Browse helper ---
+// --- Browse helpers (unchanged) ---
 async function browseAll(session, nodeId) {
   let allRefs = [];
   let result = await session.browse(nodeId);
@@ -114,7 +118,7 @@ async function findAllVariableNodes(session, startNodeId) {
   return allVariables;
 }
 
-// --- Cleanup ---
+// --- Cleanup (unchanged) ---
 async function cleanup() {
   console.log("\n🧹 Cleaning up...");
   try {
@@ -168,9 +172,7 @@ async function main() {
     });
 
     console.log(`📦 Found ${allVariables.length} variable nodes in ns=2 and i=1000–8000`);
-
     fs.writeFileSync("discoveredVariables.json", JSON.stringify(allVariables, null, 2));
-
     setInterval(() => console.log("⏳ Still receiving data..."), 10000);
 
     const pLimit = require("p-limit").default || require("p-limit");
@@ -186,7 +188,7 @@ async function main() {
           await new Promise(resolve => setTimeout(resolve, index * 20));
           console.log(`📡 Subscribing to: ${nodeId}`);
 
-          // Initial read
+          // --- Initial Read ---
           try {
             const dataValue = await session.read({ nodeId, attributeId: opcua.AttributeIds.Value });
             const rawValue = dataValue.value?.value;
@@ -194,24 +196,26 @@ async function main() {
             const slSystemTime = formatSriLankaTime(systemTime);
 
             if (typeof rawValue === "number" || typeof rawValue === "boolean") {
-              const desc = getDescriptionFromInflux(nodeId, variable.name);
+              const meta = getNodeMeta(nodeId, variable.name);
               console.log(`📦 Initial Value → ${rawValue} at ${slSystemTime}`);
-              console.log(`📄 Description : ${desc}`);
+              console.log(`📄 Description : ${meta.description}`);
+              console.log(`📂 Category    : ${meta.category}`);
 
               const point = new Point("solar_data")
                 .tag("nodeId", nodeId)
-                .tag("description", desc)
+                .tag("description", meta.description)
+                .tag("category", meta.category)
                 .floatField("value", Number(rawValue))
                 .timestamp(systemTime);
               writeApi.writePoint(point);
 
-              markDataReceived(); // 🩺 heartbeat update
+              markDataReceived();
             }
           } catch (e) {
             console.error(`⚠️ Failed initial read for ${nodeId}:`, e.message);
           }
 
-          // Subscribe to changes
+          // --- Subscribe to changes ---
           const monitoredItem = opcua.ClientMonitoredItem.create(
             subscription,
             { nodeId: opcua.resolveNodeId(nodeId), attributeId: opcua.AttributeIds.Value },
@@ -223,13 +227,14 @@ async function main() {
             const rawValue = dataValue.value?.value;
             const systemTime = new Date();
             const slSystemTime = formatSriLankaTime(systemTime);
-
             if (!(typeof rawValue === "number" || typeof rawValue === "boolean")) return;
-            const desc = getDescriptionFromInflux(nodeId, variable.name);
+
+            const meta = getNodeMeta(nodeId, variable.name);
 
             console.log(`\n📥 Data Received ---------------------------`);
             console.log(`📛 Node        : ${nodeId}`);
-            console.log(`📄 Description : ${desc}`);
+            console.log(`📄 Description : ${meta.description}`);
+            console.log(`📂 Category    : ${meta.category}`);
             console.log(`📈 Value       : ${rawValue}`);
             console.log(`🖥️  System Time : ${slSystemTime}`);
             console.log(`📤 Writing to InfluxDB...`);
@@ -237,12 +242,12 @@ async function main() {
             try {
               const point = new Point("solar_data")
                 .tag("nodeId", nodeId)
-                .tag("description", desc)
+                .tag("description", meta.description)
+                .tag("category", meta.category)
                 .floatField("value", Number(rawValue))
                 .timestamp(systemTime);
               writeApi.writePoint(point);
-
-              markDataReceived(); // 🩺 heartbeat update
+              markDataReceived();
             } catch (err) {
               console.error("❌ InfluxDB write error:", err);
             }
