@@ -38,10 +38,50 @@ function formatSriLankaTime(date) {
   return `${get("year")}-${get("month")}-${get("day")} ${get("hour")}:${get("minute")}:${get("second")}.${milliseconds}`;
 }
 
+// --- 🩺 Smart Heartbeat System ---
+const heartbeatPath = "heartbeat.txt";
+let lastDataTime = null;
+
+function updateHeartbeatFile(statusText = "⏳ Waiting for data...") {
+  const now = new Date();
+  const nowLK = formatSriLankaTime(now);
+
+  let lastReceived = "N/A";
+  let diffMin = "N/A";
+
+  if (lastDataTime) {
+    const diffMs = now - lastDataTime;
+    diffMin = Math.round(diffMs / 60000);
+    lastReceived = formatSriLankaTime(lastDataTime);
+    if (diffMin < 1) statusText = "✅ Active (Data flowing)";
+    else statusText = "⚠️ No data recently";
+  }
+
+  const content = [
+    `Heartbeat time: ${nowLK}`,
+    `Status: ${statusText}`,
+    `Last data received: ${lastReceived}`,
+    `Minutes since last data: ${diffMin}`
+  ].join("\n");
+
+  try {
+    fs.writeFileSync(heartbeatPath, content);
+  } catch (err) {
+    console.error("⚠️ Failed to write heartbeat:", err.message);
+  }
+}
+
+// run heartbeat file update every 15 seconds (even if no data)
+setInterval(() => updateHeartbeatFile(), 15000);
+
+// --- When actual data arrives ---
+function markDataReceived() {
+  lastDataTime = new Date();
+  updateHeartbeatFile("✅ Data received");
+}
+
 // --- Helper: get description directly from InfluxDB write ---
 function getDescriptionFromInflux(nodeId, fallbackName) {
-  // Minimal: Just use the fallbackName as description
-  // The backup script will now read the actual description
   return fallbackName || nodeId || "N/A";
 }
 
@@ -140,7 +180,7 @@ async function main() {
       const batch = allVariables.slice(i, i + MAX_CONCURRENT);
       console.log(`🚀 Subscribing batch ${i / MAX_CONCURRENT + 1} (${batch.length} items)...`);
 
-      await Promise.all(batch.map((variable, index) => 
+      await Promise.all(batch.map((variable, index) =>
         limit(async () => {
           const nodeId = variable.nodeId;
           await new Promise(resolve => setTimeout(resolve, index * 20));
@@ -164,6 +204,8 @@ async function main() {
                 .floatField("value", Number(rawValue))
                 .timestamp(systemTime);
               writeApi.writePoint(point);
+
+              markDataReceived(); // 🩺 heartbeat update
             }
           } catch (e) {
             console.error(`⚠️ Failed initial read for ${nodeId}:`, e.message);
@@ -199,6 +241,8 @@ async function main() {
                 .floatField("value", Number(rawValue))
                 .timestamp(systemTime);
               writeApi.writePoint(point);
+
+              markDataReceived(); // 🩺 heartbeat update
             } catch (err) {
               console.error("❌ InfluxDB write error:", err);
             }

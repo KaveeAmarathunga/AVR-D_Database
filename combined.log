@@ -281,3 +281,363 @@ ts=2025-10-13T10:40:50.073135Z lvl=info msg="Cache snapshot (end)" log_id=0zZHo8
 [HEARTBEAT] Last alive: 13/10/2025, 16:14:06
 [HEARTBEAT] Last alive: 13/10/2025, 16:14:11
 [HEARTBEAT] Last alive: 13/10/2025, 16:14:16
+
+===== Starting influxDB at 14/10/2025, 13:01:48 =====
+
+===== Starting http-api at 14/10/2025, 13:01:49 =====
+
+===== Starting http-write-api at 14/10/2025, 13:01:49 =====
+
+===== Starting subscribe-ns4 at 14/10/2025, 13:01:49 =====
+[influxDB] ts=2025-10-14T07:31:49.797094Z lvl=info msg="Welcome to InfluxDB" log_id=0z_PyHe0000 version=v2.7.11 commit=fbf5d4ab5e build_date=2024-12-02T17:48:13Z log_level=info
+[✅ influxDB] is running correctly.
+[influxDB] ts=2025-10-14T07:31:49.833524Z lvl=info msg="Resources opened" log_id=0z_PyHe0000 service=bolt path="C:\\Users\\Laptop Outlet\\.influxdbv2\\influxd.bolt"
+[influxDB] ts=2025-10-14T07:31:49.838353Z lvl=info msg="Resources opened" log_id=0z_PyHe0000 service=sqlite path="C:\\Users\\Laptop Outlet\\.influxdbv2\\influxd.sqlite"
+[influxDB] ts=2025-10-14T07:31:49.878354Z lvl=info msg="Checking InfluxDB metadata for prior version." log_id=0z_PyHe0000 bolt_path="C:\\Users\\Laptop Outlet\\.influxdbv2\\influxd.bolt"
+[influxDB] ts=2025-10-14T07:31:49.879033Z lvl=info msg="Using data dir" log_id=0z_PyHe0000 service=storage-engine service=store path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data"
+ts=2025-10-14T07:31:49.879033Z lvl=info msg="Compaction settings" log_id=0z_PyHe0000 service=storage-engine service=store max_concurrent_compactions=4 throughput_bytes_per_second=50331648 throughput_bytes_per_second_burst=50331648
+ts=2025-10-14T07:31:49.879033Z lvl=info msg="Open store (start)" log_id=0z_PyHe0000 service=storage-engine service=store op_name=tsdb_open op_event=start
+[influxDB] ts=2025-10-14T07:31:50.405435Z lvl=info msg="index opened with 8 partitions" log_id=0z_PyHe0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:31:50.409959Z lvl=info msg="index opened with 8 partitions" log_id=0z_PyHe0000 service=storage-engine index=tsi
+ts=2025-10-14T07:31:50.409959Z lvl=info msg="index opened with 8 partitions" log_id=0z_PyHe0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:31:50.410964Z lvl=info msg="index opened with 8 partitions" log_id=0z_PyHe0000 service=storage-engine index=tsi
+ts=2025-10-14T07:31:50.412479Z lvl=info msg="index opened with 8 partitions" log_id=0z_PyHe0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:31:50.427473Z lvl=info msg="index opened with 8 partitions" log_id=0z_PyHe0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:31:50.465337Z lvl=info msg="index opened with 8 partitions" log_id=0z_PyHe0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:31:50.472328Z lvl=info msg="loading changes (start)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\3\\fields.idxl" op_event=start
+[influxDB] ts=2025-10-14T07:31:50.472882Z lvl=info msg="loading changes (end)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\3\\fields.idxl" op_event=end op_elapsed=0.554ms
+ts=2025-10-14T07:31:50.472882Z lvl=info msg="loading changes (start)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\5\\fields.idxl" op_event=start
+ts=2025-10-14T07:31:50.472882Z lvl=info msg="loading changes (end)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\5\\fields.idxl" op_event=end op_elapsed=0.000ms
+ts=2025-10-14T07:31:50.474244Z lvl=info msg="loading changes (start)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\7\\fields.idxl" op_event=start
+ts=2025-10-14T07:31:50.474244Z lvl=info msg="loading changes (end)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\7\\fields.idxl" op_event=end op_elapsed=0.000ms
+[influxDB] ts=2025-10-14T07:31:50.478650Z lvl=info msg="loading changes (start)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\2\\fields.idxl" op_event=start
+[influxDB] ts=2025-10-14T07:31:50.478650Z lvl=info msg="loading changes (end)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\2\\fields.idxl" op_event=end op_elapsed=0.000ms
+ts=2025-10-14T07:31:50.479547Z lvl=info msg="loading changes (start)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\4\\fields.idxl" op_event=start
+ts=2025-10-14T07:31:50.479547Z lvl=info msg="loading changes (end)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\4\\fields.idxl" op_event=end op_elapsed=0.000ms
+[influxDB] ts=2025-10-14T07:31:50.480827Z lvl=info msg="loading changes (start)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\8\\fields.idxl" op_event=start
+ts=2025-10-14T07:31:50.480827Z lvl=info msg="loading changes (end)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\8\\fields.idxl" op_event=end op_elapsed=0.000ms
+[influxDB] ts=2025-10-14T07:31:50.505270Z lvl=info msg="loading changes (start)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\1\\fields.idxl" op_event=start
+[influxDB] ts=2025-10-14T07:31:50.507299Z lvl=info msg="loading changes (end)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\1\\fields.idxl" op_event=end op_elapsed=2.029ms
+[influxDB] ts=2025-10-14T07:31:50.579616Z lvl=info msg="Opened file" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\3\\000000022-000000002.tsm" id=0 duration=23.172ms
+[influxDB] ts=2025-10-14T07:31:50.580620Z lvl=info msg="Opened shard" log_id=0z_PyHe0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=3 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\3" index_version=tsi1 duration=529.830ms
+ts=2025-10-14T07:31:50.580620Z lvl=info msg="Finished loading shard, current progress 9.1% shards (1 / 11)." log_id=0z_PyHe0000 service=storage-engine
+ts=2025-10-14T07:31:50.581617Z lvl=info msg="Opened file" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\1\\000000013-000000002.tsm" id=0 duration=0.997ms
+ts=2025-10-14T07:31:50.583137Z lvl=info msg="Opened shard" log_id=0z_PyHe0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=1 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\1" index_version=tsi1 duration=531.297ms
+ts=2025-10-14T07:31:50.583137Z lvl=info msg="Finished loading shard, current progress 18.2% shards (2 / 11)." log_id=0z_PyHe0000 service=storage-engine
+ts=2025-10-14T07:31:50.587215Z lvl=info msg="Opened file" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\7\\000000009-000000002.tsm" id=0 duration=30.772ms
+ts=2025-10-14T07:31:50.588216Z lvl=info msg="Opened shard" log_id=0z_PyHe0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=7 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\7" index_version=tsi1 duration=536.893ms
+ts=2025-10-14T07:31:50.588216Z lvl=info msg="Finished loading shard, current progress 27.3% shards (3 / 11)." log_id=0z_PyHe0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:31:50.591214Z lvl=info msg="Opened file" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\2\\000000001-000000001.tsm" id=0 duration=43.194ms
+ts=2025-10-14T07:31:50.591916Z lvl=info msg="Opened shard" log_id=0z_PyHe0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=2 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\2" index_version=tsi1 duration=540.593ms
+[influxDB] ts=2025-10-14T07:31:50.594089Z lvl=info msg="Opened file" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\5\\000000014-000000002.tsm" id=0 duration=22.309ms
+ts=2025-10-14T07:31:50.594089Z lvl=info msg="Opened file" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\4\\000000009-000000002.tsm" id=0 duration=0.626ms
+ts=2025-10-14T07:31:50.594089Z lvl=info msg="Opened file" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\8\\000000001-000000001.tsm" id=0 duration=20.809ms
+ts=2025-10-14T07:31:50.594089Z lvl=info msg="Opened shard" log_id=0z_PyHe0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=8 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\8" index_version=tsi1 duration=542.257ms
+ts=2025-10-14T07:31:50.594089Z lvl=info msg="Opened shard" log_id=0z_PyHe0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=4 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\4" index_version=tsi1 duration=542.766ms
+[influxDB] ts=2025-10-14T07:31:50.594089Z lvl=info msg="Opened shard" log_id=0z_PyHe0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=5 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\5" index_version=tsi1 duration=542.766ms
+ts=2025-10-14T07:31:50.597213Z lvl=info msg="Finished loading shard, current progress 63.6% shards (7 / 11)." log_id=0z_PyHe0000 service=storage-engine
+ts=2025-10-14T07:31:50.594089Z lvl=info msg="Finished loading shard, current progress 54.5% shards (6 / 11)." log_id=0z_PyHe0000 service=storage-engine
+ts=2025-10-14T07:31:50.594089Z lvl=info msg="Finished loading shard, current progress 45.5% shards (5 / 11)." log_id=0z_PyHe0000 service=storage-engine
+ts=2025-10-14T07:31:50.594089Z lvl=info msg="Finished loading shard, current progress 36.4% shards (4 / 11)." log_id=0z_PyHe0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:31:50.613010Z lvl=info msg="index opened with 8 partitions" log_id=0z_PyHe0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:31:50.638241Z lvl=info msg="loading changes (start)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\7b28967b0b02e70a\\autogen\\6\\fields.idxl" op_event=start
+[influxDB] ts=2025-10-14T07:31:50.638877Z lvl=info msg="loading changes (end)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\7b28967b0b02e70a\\autogen\\6\\fields.idxl" op_event=end op_elapsed=0.636ms
+[influxDB] ts=2025-10-14T07:31:50.664560Z lvl=info msg="Opened file" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\7b28967b0b02e70a\\autogen\\6\\000000001-000000001.tsm" id=0 duration=0.639ms
+[influxDB] ts=2025-10-14T07:31:50.665123Z lvl=info msg="Opened shard" log_id=0z_PyHe0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=6 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\7b28967b0b02e70a\\autogen\\6" index_version=tsi1 duration=217.454ms
+ts=2025-10-14T07:31:50.665123Z lvl=info msg="Finished loading shard, current progress 72.7% shards (8 / 11)." log_id=0z_PyHe0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:31:50.853417Z lvl=info msg="index opened with 8 partitions" log_id=0z_PyHe0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:31:50.909149Z lvl=info msg="loading changes (start)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\9\\fields.idxl" op_event=start
+[influxDB] ts=2025-10-14T07:31:50.910149Z lvl=info msg="loading changes (end)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\9\\fields.idxl" op_event=end op_elapsed=1.000ms
+ts=2025-10-14T07:31:50.928783Z lvl=info msg="TSI log compaction (start)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=8 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=start
+[influxDB] ts=2025-10-14T07:31:50.938855Z lvl=info msg="index opened with 8 partitions" log_id=0z_PyHe0000 service=storage-engine index=tsi
+ts=2025-10-14T07:31:50.952676Z lvl=info msg="Opened file" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\9\\000000001-000000001.tsm" id=0 duration=16.822ms
+ts=2025-10-14T07:31:50.958889Z lvl=info msg="Opened shard" log_id=0z_PyHe0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=9 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\9" index_version=tsi1 duration=217.076ms
+ts=2025-10-14T07:31:50.958889Z lvl=info msg="Finished loading shard, current progress 81.8% shards (9 / 11)." log_id=0z_PyHe0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:31:50.978587Z lvl=info msg="loading changes (start)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\10\\fields.idxl" op_event=start
+ts=2025-10-14T07:31:50.978587Z lvl=info msg="loading changes (end)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\10\\fields.idxl" op_event=end op_elapsed=0.000ms
+ts=2025-10-14T07:31:50.999056Z lvl=info msg="TSI log compaction (start)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=1 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=start
+[influxDB] ts=2025-10-14T07:31:51.011405Z lvl=info msg="TSI log compaction (start)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=5 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=start
+[influxDB] ts=2025-10-14T07:31:51.014708Z lvl=info msg="TSI log compaction (start)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=3 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=start
+ts=2025-10-14T07:31:51.015703Z lvl=info msg="TSI log compaction (start)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=4 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=start
+ts=2025-10-14T07:31:51.015703Z lvl=info msg="TSI log compaction (start)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=2 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=start
+[influxDB] ts=2025-10-14T07:31:51.074277Z lvl=info msg="TSI log compaction (start)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=6 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=start
+[influxDB] ts=2025-10-14T07:31:51.140128Z lvl=info msg="Opened file" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\10\\000000001-000000001.tsm" id=0 duration=51.214ms
+[influxDB] ts=2025-10-14T07:31:51.141139Z lvl=info msg="TSI log compaction (start)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=7 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=start
+ts=2025-10-14T07:31:51.147679Z lvl=info msg="Log file compacted" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=3 op_name=tsi1_compact_log_file tsi1_log_file_id=1 elapsed=132ms bytes=21358 kb_per_sec=156
+ts=2025-10-14T07:31:51.148678Z lvl=info msg="TSI log compaction (end)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=3 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=end op_elapsed=133.970ms
+[influxDB] ts=2025-10-14T07:31:51.161396Z lvl=info msg="Opened shard" log_id=0z_PyHe0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=10 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\10" index_version=tsi1 duration=420.670ms
+ts=2025-10-14T07:31:51.161396Z lvl=info msg="Finished loading shard, current progress 90.9% shards (10 / 11)." log_id=0z_PyHe0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:31:51.220961Z lvl=info msg="Log file compacted" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=5 op_name=tsi1_compact_log_file tsi1_log_file_id=1 elapsed=209ms bytes=18197 kb_per_sec=84
+[influxDB] ts=2025-10-14T07:31:51.231241Z lvl=info msg="TSI log compaction (end)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=5 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=end op_elapsed=219.836ms
+ts=2025-10-14T07:31:51.231241Z lvl=info msg="Log file compacted" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=1 op_name=tsi1_compact_log_file tsi1_log_file_id=1 elapsed=232ms bytes=17650 kb_per_sec=74
+[influxDB] ts=2025-10-14T07:31:51.234435Z lvl=info msg="TSI log compaction (end)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=1 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=end op_elapsed=235.380ms
+ts=2025-10-14T07:31:51.236663Z lvl=info msg="Log file compacted" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=2 op_name=tsi1_compact_log_file tsi1_log_file_id=1 elapsed=220ms bytes=17425 kb_per_sec=77
+[influxDB] ts=2025-10-14T07:31:51.237665Z lvl=info msg="TSI log compaction (end)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=2 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=end op_elapsed=221.962ms
+ts=2025-10-14T07:31:51.239661Z lvl=info msg="Log file compacted" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=4 op_name=tsi1_compact_log_file tsi1_log_file_id=1 elapsed=223ms bytes=18509 kb_per_sec=80
+[influxDB] ts=2025-10-14T07:31:51.245967Z lvl=info msg="TSI log compaction (end)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=4 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=end op_elapsed=230.263ms
+ts=2025-10-14T07:31:51.245967Z lvl=info msg="Log file compacted" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=8 op_name=tsi1_compact_log_file tsi1_log_file_id=1 elapsed=318ms bytes=15793 kb_per_sec=48
+ts=2025-10-14T07:31:51.247419Z lvl=info msg="TSI log compaction (end)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=8 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=end op_elapsed=320.222ms
+[influxDB] ts=2025-10-14T07:31:51.255966Z lvl=info msg="Log file compacted" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=6 op_name=tsi1_compact_log_file tsi1_log_file_id=1 elapsed=181ms bytes=17507 kb_per_sec=94
+[influxDB] ts=2025-10-14T07:31:51.256966Z lvl=info msg="TSI log compaction (end)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=6 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=end op_elapsed=182.689ms
+ts=2025-10-14T07:31:51.258984Z lvl=info msg="Log file compacted" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=7 op_name=tsi1_compact_log_file tsi1_log_file_id=1 elapsed=117ms bytes=17138 kb_per_sec=142
+ts=2025-10-14T07:31:51.260447Z lvl=info msg="TSI log compaction (end)" log_id=0z_PyHe0000 service=storage-engine index=tsi tsi1_partition=7 op_name=tsi1_compact_log_file tsi1_log_file_id=1 op_event=end op_elapsed=119.308ms
+ts=2025-10-14T07:31:51.266202Z lvl=info msg="index opened with 8 partitions" log_id=0z_PyHe0000 service=storage-engine index=tsi
+ts=2025-10-14T07:31:51.269203Z lvl=info msg="loading changes (start)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\11\\fields.idxl" op_event=start
+[influxDB] ts=2025-10-14T07:31:51.416992Z lvl=info msg="loading changes (end)" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\11\\fields.idxl" op_event=end op_elapsed=147.790ms
+[influxDB] ts=2025-10-14T07:31:51.452665Z lvl=info msg="Reading file" log_id=0z_PyHe0000 service=storage-engine engine=tsm1 service=cacheloader path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\wal\\9f614f6cafd1e74f\\autogen\\11\\_00001.wal" size=707680
+[influxDB] ts=2025-10-14T07:31:51.558870Z lvl=info msg="Opened shard" log_id=0z_PyHe0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=11 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\11" index_version=tsi1 duration=818.144ms
+ts=2025-10-14T07:31:51.558870Z lvl=info msg="Finished loading shard, current progress 100.0% shards (11 / 11)." log_id=0z_PyHe0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:31:51.559868Z lvl=info msg="Open store (end)" log_id=0z_PyHe0000 service=storage-engine service=store op_name=tsdb_open op_event=end op_elapsed=1680.834ms
+ts=2025-10-14T07:31:51.559868Z lvl=info msg="Starting retention policy enforcement service" log_id=0z_PyHe0000 service=retention check_interval=30m
+[influxDB] ts=2025-10-14T07:31:51.561376Z lvl=info msg="Starting precreation service" log_id=0z_PyHe0000 service=shard-precreation check_interval=10m advance_period=30m
+[influxDB] ts=2025-10-14T07:31:51.582402Z lvl=info msg="Starting query controller" log_id=0z_PyHe0000 service=storage-reads concurrency_quota=1024 initial_memory_bytes_quota_per_query=9223372036854775807 memory_bytes_quota_per_query=9223372036854775807 max_memory_bytes=0 queue_size=1024
+[influxDB] ts=2025-10-14T07:31:51.614287Z lvl=info msg="Configuring InfluxQL statement executor (zeros indicate unlimited)." log_id=0z_PyHe0000 max_select_point=0 max_select_series=0 max_select_buckets=0
+[influxDB] ts=2025-10-14T07:31:51.681088Z lvl=info msg=Starting log_id=0z_PyHe0000 service=telemetry interval=8h
+[influxDB] ts=2025-10-14T07:31:51.695024Z lvl=info msg=Listening log_id=0z_PyHe0000 service=tcp-listener transport=http addr=:8086 port=8086
+[subscribe-ns4] [dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+[subscribe-ns4] 🔌 Connecting to OPC UA server at: opc.tcp://0.0.0.0:4841
+[http-write-api] ✅ Write API listening at http://localhost:7003
+[http-api] 🚀 API server running at http://localhost:8003
+
+🚀 All services have been started. Look for ✅ above to confirm each one is running.
+[subscribe-ns4 ERROR] ❌ Fatal error: Error: The connection cannot be established with server opc.tcp://0.0.0.0:4841 .
+Please check that the server is up and running or your network configuration.
+Err = (connect ECONNREFUSED 0.0.0.0:4841)
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\node-opcua-client\dist\private\client_base_impl.js:740:27
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\node-opcua-client\dist\private\client_base_impl.js:556:25
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\node-opcua-secure-channel\dist\source\client\client_secure_channel_layer.js:368:13
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:3682:19
+    at wrapper (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:272:20)
+    at replenish (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:442:29)
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:452:13
+    at eachOfLimit (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:478:36)
+    at awaitable (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:814:16)
+[subscribe-ns4] 
+🧹 Cleaning up...
+✅ All connections closed successfully
+[subscribe-ns4] exited with code 0
+
+===== Starting influxDB at 14/10/2025, 13:02:44 =====
+
+===== Starting http-api at 14/10/2025, 13:02:44 =====
+
+===== Starting http-write-api at 14/10/2025, 13:02:44 =====
+
+===== Starting subscribe-ns4 at 14/10/2025, 13:02:44 =====
+[influxDB] ts=2025-10-14T07:32:44.264354Z lvl=info msg="Welcome to InfluxDB" log_id=0z_Q0bQ0000 version=v2.7.11 commit=fbf5d4ab5e build_date=2024-12-02T17:48:13Z log_level=info
+[✅ influxDB] is running correctly.
+[influxDB] ts=2025-10-14T07:32:44.284567Z lvl=info msg="Resources opened" log_id=0z_Q0bQ0000 service=bolt path="C:\\Users\\Laptop Outlet\\.influxdbv2\\influxd.bolt"
+[influxDB] ts=2025-10-14T07:32:44.284567Z lvl=info msg="Resources opened" log_id=0z_Q0bQ0000 service=sqlite path="C:\\Users\\Laptop Outlet\\.influxdbv2\\influxd.sqlite"
+[influxDB] ts=2025-10-14T07:32:44.297950Z lvl=info msg="Checking InfluxDB metadata for prior version." log_id=0z_Q0bQ0000 bolt_path="C:\\Users\\Laptop Outlet\\.influxdbv2\\influxd.bolt"
+[influxDB] ts=2025-10-14T07:32:44.298952Z lvl=info msg="Using data dir" log_id=0z_Q0bQ0000 service=storage-engine service=store path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data"
+[influxDB] ts=2025-10-14T07:32:44.298952Z lvl=info msg="Compaction settings" log_id=0z_Q0bQ0000 service=storage-engine service=store max_concurrent_compactions=4 throughput_bytes_per_second=50331648 throughput_bytes_per_second_burst=50331648
+ts=2025-10-14T07:32:44.299952Z lvl=info msg="Open store (start)" log_id=0z_Q0bQ0000 service=storage-engine service=store op_name=tsdb_open op_event=start
+[influxDB] ts=2025-10-14T07:32:44.340699Z lvl=info msg="index opened with 8 partitions" log_id=0z_Q0bQ0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:32:44.342217Z lvl=info msg="loading changes (start)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\5\\fields.idxl" op_event=start
+ts=2025-10-14T07:32:44.342217Z lvl=info msg="loading changes (end)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\5\\fields.idxl" op_event=end op_elapsed=0.000ms
+ts=2025-10-14T07:32:44.345730Z lvl=info msg="index opened with 8 partitions" log_id=0z_Q0bQ0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:32:44.346730Z lvl=info msg="loading changes (start)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\7\\fields.idxl" op_event=start
+ts=2025-10-14T07:32:44.346730Z lvl=info msg="loading changes (end)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\7\\fields.idxl" op_event=end op_elapsed=0.000ms
+ts=2025-10-14T07:32:44.347732Z lvl=info msg="Opened file" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\7\\000000009-000000002.tsm" id=0 duration=0.000ms
+ts=2025-10-14T07:32:44.347732Z lvl=info msg="Opened shard" log_id=0z_Q0bQ0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=7 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\7" index_version=tsi1 duration=36.694ms
+ts=2025-10-14T07:32:44.348813Z lvl=info msg="Finished loading shard, current progress 9.1% shards (1 / 11)." log_id=0z_Q0bQ0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:32:44.352240Z lvl=info msg="Opened file" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\5\\000000014-000000002.tsm" id=0 duration=1.509ms
+[influxDB] ts=2025-10-14T07:32:44.355487Z lvl=info msg="Opened shard" log_id=0z_Q0bQ0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=5 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\5" index_version=tsi1 duration=44.450ms
+ts=2025-10-14T07:32:44.355487Z lvl=info msg="Finished loading shard, current progress 18.2% shards (2 / 11)." log_id=0z_Q0bQ0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:32:44.374066Z lvl=info msg="index opened with 8 partitions" log_id=0z_Q0bQ0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:32:44.375068Z lvl=info msg="loading changes (start)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\3\\fields.idxl" op_event=start
+ts=2025-10-14T07:32:44.376062Z lvl=info msg="loading changes (end)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\3\\fields.idxl" op_event=end op_elapsed=0.994ms
+ts=2025-10-14T07:32:44.376062Z lvl=info msg="index opened with 8 partitions" log_id=0z_Q0bQ0000 service=storage-engine index=tsi
+ts=2025-10-14T07:32:44.377588Z lvl=info msg="loading changes (start)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\7b28967b0b02e70a\\autogen\\6\\fields.idxl" op_event=start
+ts=2025-10-14T07:32:44.377588Z lvl=info msg="loading changes (end)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\7b28967b0b02e70a\\autogen\\6\\fields.idxl" op_event=end op_elapsed=0.000ms
+ts=2025-10-14T07:32:44.377588Z lvl=info msg="Opened file" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\3\\000000022-000000002.tsm" id=0 duration=1.526ms
+[influxDB] ts=2025-10-14T07:32:44.381574Z lvl=info msg="Opened shard" log_id=0z_Q0bQ0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=3 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\3" index_version=tsi1 duration=70.536ms
+ts=2025-10-14T07:32:44.381574Z lvl=info msg="Finished loading shard, current progress 27.3% shards (3 / 11)." log_id=0z_Q0bQ0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:32:44.387755Z lvl=info msg="index opened with 8 partitions" log_id=0z_Q0bQ0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:32:44.388752Z lvl=info msg="loading changes (start)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\4\\fields.idxl" op_event=start
+ts=2025-10-14T07:32:44.388752Z lvl=info msg="loading changes (end)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\4\\fields.idxl" op_event=end op_elapsed=0.000ms
+ts=2025-10-14T07:32:44.388752Z lvl=info msg="Opened file" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\7b28967b0b02e70a\\autogen\\6\\000000001-000000001.tsm" id=0 duration=0.000ms
+ts=2025-10-14T07:32:44.388752Z lvl=info msg="Opened shard" log_id=0z_Q0bQ0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=6 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\7b28967b0b02e70a\\autogen\\6" index_version=tsi1 duration=64.787ms
+ts=2025-10-14T07:32:44.389764Z lvl=info msg="Finished loading shard, current progress 36.4% shards (4 / 11)." log_id=0z_Q0bQ0000 service=storage-engine
+ts=2025-10-14T07:32:44.389764Z lvl=info msg="Opened file" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\4\\000000009-000000002.tsm" id=0 duration=1.012ms
+ts=2025-10-14T07:32:44.389764Z lvl=info msg="Opened shard" log_id=0z_Q0bQ0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=4 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\4" index_version=tsi1 duration=78.726ms
+ts=2025-10-14T07:32:44.389764Z lvl=info msg="Finished loading shard, current progress 45.5% shards (5 / 11)." log_id=0z_Q0bQ0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:32:44.401124Z lvl=info msg="index opened with 8 partitions" log_id=0z_Q0bQ0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:32:44.404177Z lvl=info msg="loading changes (start)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\1\\fields.idxl" op_event=start
+[influxDB] ts=2025-10-14T07:32:44.404778Z lvl=info msg="loading changes (end)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\1\\fields.idxl" op_event=end op_elapsed=0.601ms
+ts=2025-10-14T07:32:44.406795Z lvl=info msg="Opened file" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\1\\000000013-000000002.tsm" id=0 duration=1.001ms
+[influxDB] ts=2025-10-14T07:32:44.406795Z lvl=info msg="index opened with 8 partitions" log_id=0z_Q0bQ0000 service=storage-engine index=tsi
+ts=2025-10-14T07:32:44.407791Z lvl=info msg="Opened shard" log_id=0z_Q0bQ0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=1 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\1" index_version=tsi1 duration=96.753ms
+ts=2025-10-14T07:32:44.407791Z lvl=info msg="Finished loading shard, current progress 54.5% shards (6 / 11)." log_id=0z_Q0bQ0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:32:44.408803Z lvl=info msg="index opened with 8 partitions" log_id=0z_Q0bQ0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:32:44.411206Z lvl=info msg="loading changes (start)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\9\\fields.idxl" op_event=start
+ts=2025-10-14T07:32:44.412222Z lvl=info msg="loading changes (end)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\9\\fields.idxl" op_event=end op_elapsed=1.016ms
+[influxDB] ts=2025-10-14T07:32:44.415772Z lvl=info msg="Opened file" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\9\\000000001-000000001.tsm" id=0 duration=1.987ms
+ts=2025-10-14T07:32:44.416776Z lvl=info msg="Opened shard" log_id=0z_Q0bQ0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=9 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\9" index_version=tsi1 duration=67.963ms
+ts=2025-10-14T07:32:44.416776Z lvl=info msg="Finished loading shard, current progress 63.6% shards (7 / 11)." log_id=0z_Q0bQ0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:32:44.421856Z lvl=info msg="loading changes (start)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\11\\fields.idxl" op_event=start
+[influxDB] ts=2025-10-14T07:32:44.422386Z lvl=info msg="loading changes (end)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\11\\fields.idxl" op_event=end op_elapsed=0.530ms
+ts=2025-10-14T07:32:44.422386Z lvl=info msg="index opened with 8 partitions" log_id=0z_Q0bQ0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:32:44.424181Z lvl=info msg="Reading file" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 service=cacheloader path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\wal\\9f614f6cafd1e74f\\autogen\\11\\_00001.wal" size=749310
+ts=2025-10-14T07:32:44.425192Z lvl=info msg="loading changes (start)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\8\\fields.idxl" op_event=start
+ts=2025-10-14T07:32:44.425192Z lvl=info msg="loading changes (end)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\8\\fields.idxl" op_event=end op_elapsed=0.000ms
+[influxDB] ts=2025-10-14T07:32:44.431891Z lvl=info msg="Opened file" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\8\\000000001-000000001.tsm" id=0 duration=2.684ms
+[influxDB] ts=2025-10-14T07:32:44.432417Z lvl=info msg="index opened with 8 partitions" log_id=0z_Q0bQ0000 service=storage-engine index=tsi
+ts=2025-10-14T07:32:44.432417Z lvl=info msg="Opened shard" log_id=0z_Q0bQ0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=8 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\8" index_version=tsi1 duration=121.379ms
+ts=2025-10-14T07:32:44.432417Z lvl=info msg="Finished loading shard, current progress 72.7% shards (8 / 11)." log_id=0z_Q0bQ0000 service=storage-engine
+ts=2025-10-14T07:32:44.433508Z lvl=info msg="index opened with 8 partitions" log_id=0z_Q0bQ0000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:32:44.433508Z lvl=info msg="loading changes (start)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\2\\fields.idxl" op_event=start
+ts=2025-10-14T07:32:44.437999Z lvl=info msg="loading changes (end)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\2\\fields.idxl" op_event=end op_elapsed=4.491ms
+ts=2025-10-14T07:32:44.437999Z lvl=info msg="loading changes (start)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\10\\fields.idxl" op_event=start
+ts=2025-10-14T07:32:44.437999Z lvl=info msg="loading changes (end)" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\10\\fields.idxl" op_event=end op_elapsed=0.000ms
+[influxDB] ts=2025-10-14T07:32:44.439536Z lvl=info msg="Opened file" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\10\\000000001-000000001.tsm" id=0 duration=0.000ms
+ts=2025-10-14T07:32:44.440546Z lvl=info msg="Opened shard" log_id=0z_Q0bQ0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=10 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\10" index_version=tsi1 duration=85.059ms
+ts=2025-10-14T07:32:44.440546Z lvl=info msg="Finished loading shard, current progress 81.8% shards (9 / 11)." log_id=0z_Q0bQ0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:32:44.441548Z lvl=info msg="Opened file" log_id=0z_Q0bQ0000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\2\\000000001-000000001.tsm" id=0 duration=0.000ms
+ts=2025-10-14T07:32:44.442552Z lvl=info msg="Opened shard" log_id=0z_Q0bQ0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=2 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\2" index_version=tsi1 duration=131.514ms
+ts=2025-10-14T07:32:44.442552Z lvl=info msg="Finished loading shard, current progress 90.9% shards (10 / 11)." log_id=0z_Q0bQ0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:32:44.515446Z lvl=info msg="Opened shard" log_id=0z_Q0bQ0000 service=storage-engine service=store op_name=tsdb_open db_shard_id=11 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\11" index_version=tsi1 duration=130.744ms
+ts=2025-10-14T07:32:44.515446Z lvl=info msg="Finished loading shard, current progress 100.0% shards (11 / 11)." log_id=0z_Q0bQ0000 service=storage-engine
+[influxDB] ts=2025-10-14T07:32:44.516460Z lvl=info msg="Open store (end)" log_id=0z_Q0bQ0000 service=storage-engine service=store op_name=tsdb_open op_event=end op_elapsed=215.495ms
+ts=2025-10-14T07:32:44.516460Z lvl=info msg="Starting retention policy enforcement service" log_id=0z_Q0bQ0000 service=retention check_interval=30m
+ts=2025-10-14T07:32:44.516460Z lvl=info msg="Starting precreation service" log_id=0z_Q0bQ0000 service=shard-precreation check_interval=10m advance_period=30m
+[influxDB] ts=2025-10-14T07:32:44.517461Z lvl=info msg="Starting query controller" log_id=0z_Q0bQ0000 service=storage-reads concurrency_quota=1024 initial_memory_bytes_quota_per_query=9223372036854775807 memory_bytes_quota_per_query=9223372036854775807 max_memory_bytes=0 queue_size=1024
+[influxDB] ts=2025-10-14T07:32:44.520767Z lvl=info msg="Configuring InfluxQL statement executor (zeros indicate unlimited)." log_id=0z_Q0bQ0000 max_select_point=0 max_select_series=0 max_select_buckets=0
+[influxDB] ts=2025-10-14T07:32:44.541692Z lvl=info msg=Starting log_id=0z_Q0bQ0000 service=telemetry interval=8h
+[influxDB] ts=2025-10-14T07:32:44.544230Z lvl=info msg=Listening log_id=0z_Q0bQ0000 service=tcp-listener transport=http addr=:8086 port=8086
+[subscribe-ns4] [dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[subscribe-ns4] 🔌 Connecting to OPC UA server at: opc.tcp://0.0.0.0:4841
+[http-write-api] ✅ Write API listening at http://localhost:7003
+[http-api] 🚀 API server running at http://localhost:8003
+
+🚀 All services have been started. Look for ✅ above to confirm each one is running.
+[subscribe-ns4 ERROR] ❌ Fatal error: Error: The connection cannot be established with server opc.tcp://0.0.0.0:4841 .
+Please check that the server is up and running or your network configuration.
+Err = (connect ECONNREFUSED 0.0.0.0:4841)
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\node-opcua-client\dist\private\client_base_impl.js:740:27
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\node-opcua-client\dist\private\client_base_impl.js:556:25
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\node-opcua-secure-channel\dist\source\client\client_secure_channel_layer.js:368:13
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:3682:19
+    at wrapper (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:272:20)
+    at replenish (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:442:29)
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:452:13
+    at eachOfLimit (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:478:36)
+    at awaitable (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:814:16)
+[subscribe-ns4] 
+🧹 Cleaning up...
+✅ All connections closed successfully
+[subscribe-ns4] exited with code 0
+
+===== Starting influxDB at 14/10/2025, 13:05:27 =====
+
+===== Starting http-api at 14/10/2025, 13:05:27 =====
+
+===== Starting http-write-api at 14/10/2025, 13:05:27 =====
+
+===== Starting subscribe-ns4 at 14/10/2025, 13:05:27 =====
+[influxDB] ts=2025-10-14T07:35:27.473964Z lvl=info msg="Welcome to InfluxDB" log_id=0z_QAZxG000 version=v2.7.11 commit=fbf5d4ab5e build_date=2024-12-02T17:48:13Z log_level=info
+[✅ influxDB] is running correctly.
+[influxDB] ts=2025-10-14T07:35:27.500390Z lvl=info msg="Resources opened" log_id=0z_QAZxG000 service=bolt path="C:\\Users\\Laptop Outlet\\.influxdbv2\\influxd.bolt"
+[influxDB] ts=2025-10-14T07:35:27.500390Z lvl=info msg="Resources opened" log_id=0z_QAZxG000 service=sqlite path="C:\\Users\\Laptop Outlet\\.influxdbv2\\influxd.sqlite"
+[influxDB] ts=2025-10-14T07:35:27.522436Z lvl=info msg="Checking InfluxDB metadata for prior version." log_id=0z_QAZxG000 bolt_path="C:\\Users\\Laptop Outlet\\.influxdbv2\\influxd.bolt"
+[influxDB] ts=2025-10-14T07:35:27.523126Z lvl=info msg="Using data dir" log_id=0z_QAZxG000 service=storage-engine service=store path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data"
+ts=2025-10-14T07:35:27.523772Z lvl=info msg="Compaction settings" log_id=0z_QAZxG000 service=storage-engine service=store max_concurrent_compactions=4 throughput_bytes_per_second=50331648 throughput_bytes_per_second_burst=50331648
+ts=2025-10-14T07:35:27.523772Z lvl=info msg="Open store (start)" log_id=0z_QAZxG000 service=storage-engine service=store op_name=tsdb_open op_event=start
+[influxDB] ts=2025-10-14T07:35:27.590127Z lvl=info msg="index opened with 8 partitions" log_id=0z_QAZxG000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:35:27.591206Z lvl=info msg="loading changes (start)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\7\\fields.idxl" op_event=start
+[influxDB] ts=2025-10-14T07:35:27.591748Z lvl=info msg="loading changes (end)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\7\\fields.idxl" op_event=end op_elapsed=0.541ms
+ts=2025-10-14T07:35:27.592487Z lvl=info msg="Opened file" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\7\\000000009-000000002.tsm" id=0 duration=0.000ms
+ts=2025-10-14T07:35:27.593501Z lvl=info msg="Opened shard" log_id=0z_QAZxG000 service=storage-engine service=store op_name=tsdb_open db_shard_id=7 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\7" index_version=tsi1 duration=51.716ms
+ts=2025-10-14T07:35:27.593501Z lvl=info msg="Finished loading shard, current progress 9.1% shards (1 / 11)." log_id=0z_QAZxG000 service=storage-engine
+ts=2025-10-14T07:35:27.597515Z lvl=info msg="index opened with 8 partitions" log_id=0z_QAZxG000 service=storage-engine index=tsi
+ts=2025-10-14T07:35:27.600596Z lvl=info msg="loading changes (start)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\1\\fields.idxl" op_event=start
+ts=2025-10-14T07:35:27.600596Z lvl=info msg="loading changes (end)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\1\\fields.idxl" op_event=end op_elapsed=0.000ms
+[influxDB] ts=2025-10-14T07:35:27.618181Z lvl=info msg="index opened with 8 partitions" log_id=0z_QAZxG000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:35:27.619187Z lvl=info msg="loading changes (start)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\2\\fields.idxl" op_event=start
+ts=2025-10-14T07:35:27.620182Z lvl=info msg="loading changes (end)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\2\\fields.idxl" op_event=end op_elapsed=0.996ms
+[influxDB] ts=2025-10-14T07:35:27.628016Z lvl=info msg="index opened with 8 partitions" log_id=0z_QAZxG000 service=storage-engine index=tsi
+ts=2025-10-14T07:35:27.629413Z lvl=info msg="loading changes (start)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\5\\fields.idxl" op_event=start
+ts=2025-10-14T07:35:27.629413Z lvl=info msg="loading changes (end)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\5\\fields.idxl" op_event=end op_elapsed=0.000ms
+[influxDB] ts=2025-10-14T07:35:27.631087Z lvl=info msg="Opened file" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\2\\000000001-000000001.tsm" id=0 duration=0.530ms
+[influxDB] ts=2025-10-14T07:35:27.632103Z lvl=info msg="Opened file" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\5\\000000014-000000002.tsm" id=0 duration=1.016ms
+ts=2025-10-14T07:35:27.632623Z lvl=info msg="Opened shard" log_id=0z_QAZxG000 service=storage-engine service=store op_name=tsdb_open db_shard_id=5 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\5" index_version=tsi1 duration=90.838ms
+ts=2025-10-14T07:35:27.632623Z lvl=info msg="Finished loading shard, current progress 18.2% shards (2 / 11)." log_id=0z_QAZxG000 service=storage-engine
+ts=2025-10-14T07:35:27.633643Z lvl=info msg="Opened shard" log_id=0z_QAZxG000 service=storage-engine service=store op_name=tsdb_open db_shard_id=2 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\2" index_version=tsi1 duration=91.858ms
+ts=2025-10-14T07:35:27.634036Z lvl=info msg="Finished loading shard, current progress 27.3% shards (3 / 11)." log_id=0z_QAZxG000 service=storage-engine
+[influxDB] ts=2025-10-14T07:35:27.640353Z lvl=info msg="index opened with 8 partitions" log_id=0z_QAZxG000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:35:27.643903Z lvl=info msg="loading changes (start)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\7b28967b0b02e70a\\autogen\\6\\fields.idxl" op_event=start
+ts=2025-10-14T07:35:27.643903Z lvl=info msg="loading changes (end)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\7b28967b0b02e70a\\autogen\\6\\fields.idxl" op_event=end op_elapsed=0.000ms
+ts=2025-10-14T07:35:27.645916Z lvl=info msg="Opened file" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\7b28967b0b02e70a\\autogen\\6\\000000001-000000001.tsm" id=0 duration=0.993ms
+ts=2025-10-14T07:35:27.645916Z lvl=info msg="Opened shard" log_id=0z_QAZxG000 service=storage-engine service=store op_name=tsdb_open db_shard_id=6 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\7b28967b0b02e70a\\autogen\\6" index_version=tsi1 duration=64.749ms
+ts=2025-10-14T07:35:27.645916Z lvl=info msg="Finished loading shard, current progress 36.4% shards (4 / 11)." log_id=0z_QAZxG000 service=storage-engine
+ts=2025-10-14T07:35:27.646919Z lvl=info msg="Opened file" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\1\\000000013-000000002.tsm" id=0 duration=44.796ms
+[influxDB] ts=2025-10-14T07:35:27.648917Z lvl=info msg="Opened shard" log_id=0z_QAZxG000 service=storage-engine service=store op_name=tsdb_open db_shard_id=1 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\1" index_version=tsi1 duration=107.132ms
+ts=2025-10-14T07:35:27.648917Z lvl=info msg="Finished loading shard, current progress 45.5% shards (5 / 11)." log_id=0z_QAZxG000 service=storage-engine
+[influxDB] ts=2025-10-14T07:35:27.664727Z lvl=info msg="index opened with 8 partitions" log_id=0z_QAZxG000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:35:27.666750Z lvl=info msg="loading changes (start)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\8\\fields.idxl" op_event=start
+ts=2025-10-14T07:35:27.666750Z lvl=info msg="loading changes (end)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\8\\fields.idxl" op_event=end op_elapsed=0.000ms
+ts=2025-10-14T07:35:27.666750Z lvl=info msg="index opened with 8 partitions" log_id=0z_QAZxG000 service=storage-engine index=tsi
+ts=2025-10-14T07:35:27.668410Z lvl=info msg="Opened file" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\8\\000000001-000000001.tsm" id=0 duration=1.014ms
+ts=2025-10-14T07:35:27.668410Z lvl=info msg="loading changes (start)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\3\\fields.idxl" op_event=start
+ts=2025-10-14T07:35:27.668410Z lvl=info msg="loading changes (end)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\3\\fields.idxl" op_event=end op_elapsed=0.000ms
+ts=2025-10-14T07:35:27.669411Z lvl=info msg="index opened with 8 partitions" log_id=0z_QAZxG000 service=storage-engine index=tsi
+[influxDB] ts=2025-10-14T07:35:27.670408Z lvl=info msg="loading changes (start)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\4\\fields.idxl" op_event=start
+ts=2025-10-14T07:35:27.670408Z lvl=info msg="loading changes (end)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\4\\fields.idxl" op_event=end op_elapsed=0.000ms
+ts=2025-10-14T07:35:27.673654Z lvl=info msg="index opened with 8 partitions" log_id=0z_QAZxG000 service=storage-engine index=tsi
+ts=2025-10-14T07:35:27.679261Z lvl=info msg="loading changes (start)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\11\\fields.idxl" op_event=start
+ts=2025-10-14T07:35:27.679261Z lvl=info msg="loading changes (end)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\11\\fields.idxl" op_event=end op_elapsed=0.000ms
+[influxDB] ts=2025-10-14T07:35:27.685615Z lvl=info msg="Reading file" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 service=cacheloader path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\wal\\9f614f6cafd1e74f\\autogen\\11\\_00001.wal" size=875970
+[influxDB] ts=2025-10-14T07:35:27.687999Z lvl=info msg="Opened file" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\3\\000000022-000000002.tsm" id=0 duration=1.016ms
+[influxDB] ts=2025-10-14T07:35:27.687999Z lvl=info msg="Opened shard" log_id=0z_QAZxG000 service=storage-engine service=store op_name=tsdb_open db_shard_id=3 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\3" index_version=tsi1 duration=146.214ms
+ts=2025-10-14T07:35:27.687999Z lvl=info msg="Finished loading shard, current progress 54.5% shards (6 / 11)." log_id=0z_QAZxG000 service=storage-engine
+ts=2025-10-14T07:35:27.691520Z lvl=info msg="index opened with 8 partitions" log_id=0z_QAZxG000 service=storage-engine index=tsi
+ts=2025-10-14T07:35:27.694090Z lvl=info msg="loading changes (start)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\10\\fields.idxl" op_event=start
+ts=2025-10-14T07:35:27.694090Z lvl=info msg="loading changes (end)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\10\\fields.idxl" op_event=end op_elapsed=0.000ms
+[influxDB] ts=2025-10-14T07:35:27.697933Z lvl=info msg="Opened file" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\10\\000000001-000000001.tsm" id=0 duration=1.210ms
+ts=2025-10-14T07:35:27.697933Z lvl=info msg="Opened file" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\4\\000000009-000000002.tsm" id=0 duration=1.210ms
+ts=2025-10-14T07:35:27.697933Z lvl=info msg="Opened shard" log_id=0z_QAZxG000 service=storage-engine service=store op_name=tsdb_open db_shard_id=4 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\4" index_version=tsi1 duration=156.149ms
+ts=2025-10-14T07:35:27.697933Z lvl=info msg="Finished loading shard, current progress 63.6% shards (7 / 11)." log_id=0z_QAZxG000 service=storage-engine
+ts=2025-10-14T07:35:27.697933Z lvl=info msg="Opened shard" log_id=0z_QAZxG000 service=storage-engine service=store op_name=tsdb_open db_shard_id=10 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\10" index_version=tsi1 duration=65.311ms
+ts=2025-10-14T07:35:27.697933Z lvl=info msg="Finished loading shard, current progress 72.7% shards (8 / 11)." log_id=0z_QAZxG000 service=storage-engine
+ts=2025-10-14T07:35:27.700923Z lvl=info msg="Opened shard" log_id=0z_QAZxG000 service=storage-engine service=store op_name=tsdb_open db_shard_id=8 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\6ad48b5e82ec2e51\\autogen\\8" index_version=tsi1 duration=159.138ms
+ts=2025-10-14T07:35:27.701929Z lvl=info msg="Finished loading shard, current progress 81.8% shards (9 / 11)." log_id=0z_QAZxG000 service=storage-engine
+[influxDB] ts=2025-10-14T07:35:27.712065Z lvl=info msg="index opened with 8 partitions" log_id=0z_QAZxG000 service=storage-engine index=tsi
+ts=2025-10-14T07:35:27.715138Z lvl=info msg="loading changes (start)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\9\\fields.idxl" op_event=start
+ts=2025-10-14T07:35:27.716139Z lvl=info msg="loading changes (end)" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 op_name="field indices" path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\9\\fields.idxl" op_event=end op_elapsed=1.000ms
+ts=2025-10-14T07:35:27.719763Z lvl=info msg="Opened file" log_id=0z_QAZxG000 service=storage-engine engine=tsm1 service=filestore path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\9\\000000001-000000001.tsm" id=0 duration=0.990ms
+[influxDB] ts=2025-10-14T07:35:27.720764Z lvl=info msg="Opened shard" log_id=0z_QAZxG000 service=storage-engine service=store op_name=tsdb_open db_shard_id=9 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\9" index_version=tsi1 duration=106.601ms
+ts=2025-10-14T07:35:27.720764Z lvl=info msg="Finished loading shard, current progress 90.9% shards (10 / 11)." log_id=0z_QAZxG000 service=storage-engine
+[influxDB] ts=2025-10-14T07:35:27.830661Z lvl=info msg="Opened shard" log_id=0z_QAZxG000 service=storage-engine service=store op_name=tsdb_open db_shard_id=11 path="C:\\Users\\Laptop Outlet\\.influxdbv2\\engine\\data\\9f614f6cafd1e74f\\autogen\\11" index_version=tsi1 duration=196.624ms
+ts=2025-10-14T07:35:27.830661Z lvl=info msg="Finished loading shard, current progress 100.0% shards (11 / 11)." log_id=0z_QAZxG000 service=storage-engine
+[influxDB] ts=2025-10-14T07:35:27.830661Z lvl=info msg="Open store (end)" log_id=0z_QAZxG000 service=storage-engine service=store op_name=tsdb_open op_event=end op_elapsed=306.889ms
+ts=2025-10-14T07:35:27.830661Z lvl=info msg="Starting retention policy enforcement service" log_id=0z_QAZxG000 service=retention check_interval=30m
+ts=2025-10-14T07:35:27.830661Z lvl=info msg="Starting precreation service" log_id=0z_QAZxG000 service=shard-precreation check_interval=10m advance_period=30m
+[influxDB] ts=2025-10-14T07:35:27.833189Z lvl=info msg="Starting query controller" log_id=0z_QAZxG000 service=storage-reads concurrency_quota=1024 initial_memory_bytes_quota_per_query=9223372036854775807 memory_bytes_quota_per_query=9223372036854775807 max_memory_bytes=0 queue_size=1024
+[influxDB] ts=2025-10-14T07:35:27.836218Z lvl=info msg="Configuring InfluxQL statement executor (zeros indicate unlimited)." log_id=0z_QAZxG000 max_select_point=0 max_select_series=0 max_select_buckets=0
+[influxDB] ts=2025-10-14T07:35:27.870721Z lvl=info msg=Listening log_id=0z_QAZxG000 service=tcp-listener transport=http addr=:8086 port=8086
+[influxDB] ts=2025-10-14T07:35:27.871719Z lvl=info msg=Starting log_id=0z_QAZxG000 service=telemetry interval=8h
+[http-write-api] ✅ Write API listening at http://localhost:7003
+[subscribe-ns4] [dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[http-api] 🚀 API server running at http://localhost:8003
+[subscribe-ns4] 🔌 Connecting to OPC UA server at: opc.tcp://0.0.0.0:4841
+
+🚀 All services have been started. Look for ✅ above to confirm each one is running.
+[subscribe-ns4 ERROR] ❌ Fatal error: Error: The connection cannot be established with server opc.tcp://0.0.0.0:4841 .
+Please check that the server is up and running or your network configuration.
+Err = (connect ECONNREFUSED 0.0.0.0:4841)
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\node-opcua-client\dist\private\client_base_impl.js:740:27
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\node-opcua-client\dist\private\client_base_impl.js:556:25
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\node-opcua-secure-channel\dist\source\client\client_secure_channel_layer.js:368:13
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:3682:19
+    at wrapper (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:272:20)
+    at replenish (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:442:29)
+    at C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:452:13
+    at eachOfLimit (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:478:36)
+    at awaitable (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Laptop Outlet\OneDrive\Desktop\AV_R&D_Database\node_modules\async\dist\async.js:814:16)
+[subscribe-ns4] 
+🧹 Cleaning up...
+✅ All connections closed successfully
+[subscribe-ns4] exited with code 0

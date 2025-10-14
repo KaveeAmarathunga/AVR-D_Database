@@ -133,13 +133,7 @@ run("http-api", "node", ["http-api.js"], "Server running on port 8003");
 run("http-write-api", "node", ["http-write-api.js"], "Server running on port 7003");
 run("subscribe-ns4", "node", ["subscribe-ns4.js"], "✅ Connected to OPC UA server");
 
-// Heartbeat file to confirm script is alive
-setInterval(() => {
-    const heartbeatPath = path.join(__dirname, "heartbeat.txt");
-    const timestamp = `Last alive: ${colomboTime()}`;
-    fs.writeFileSync(heartbeatPath, timestamp);
-    writeLog(`[HEARTBEAT] ${timestamp}\n`);
-}, 5000);
+
 
 // Final status message
 setTimeout(() => {
